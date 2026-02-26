@@ -1,0 +1,125 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import { Instagram, Send, Menu, X } from "lucide-react"
+import { MagneticButton } from "./magnetic-button"
+
+const navLinks = [
+  { href: "#about", label: "About me" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+]
+
+export function Navbar() {
+  const [scrolled, setScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState("")
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+
+      const sections = ["about", "skills", "projects"]
+      for (const section of sections) {
+        const el = document.getElementById(section)
+        if (el) {
+          const rect = el.getBoundingClientRect()
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  return (
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "glass py-3" : "bg-transparent py-5"
+        }`}
+    >
+      <div className="container mx-auto px-6 flex items-center justify-between">
+        {/* Logo */}
+        <MagneticButton>
+          <Link href="#" className="flex items-center gap-3 group">
+            <span className="text-xl font-bold text-white group-hover:text-gradient transition-all duration-300">
+              NAVEEN
+            </span>
+          </Link>
+        </MagneticButton>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <MagneticButton key={link.href}>
+              <Link
+                href={link.href}
+                className={`relative text-gray-300 hover:text-white transition-colors duration-300 group ${activeSection === link.href.slice(1) ? "text-white" : ""
+                  }`}
+              >
+                {link.label}
+                <span
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-purple-500 to-cyan-500 transition-all duration-300 ${activeSection === link.href.slice(1) ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                />
+              </Link>
+            </MagneticButton>
+          ))}
+        </div>
+
+        {/* Social Links */}
+        <div className="hidden md:flex items-center gap-4">
+          <MagneticButton href="https://instagram.com/ignaveen01">
+            <div className="p-2 rounded-full glass hover:bg-purple-500/30 transition-all duration-300 group">
+              <Instagram className="w-5 h-5 text-gray-400 group-hover:text-purple-400 transition-colors" />
+            </div>
+          </MagneticButton>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button className="md:hidden p-2 text-white" onClick={() => setMobileOpen(!mobileOpen)}>
+          {mobileOpen ? <X /> : <Menu />}
+        </button>
+      </div>
+
+      {/* Mobile Menu with slide animation */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-500 ${mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+      >
+        <div className="glass mt-2 mx-4 rounded-xl p-6">
+          <div className="flex flex-col gap-4">
+            {navLinks.map((link, index) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-gray-300 hover:text-white transition-colors py-2"
+                onClick={() => setMobileOpen(false)}
+                style={{
+                  transform: mobileOpen ? "translateX(0)" : "translateX(-20px)",
+                  opacity: mobileOpen ? 1 : 0,
+                  transition: `all 0.3s ease ${index * 0.1}s`,
+                }}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="flex gap-4 pt-4 border-t border-purple-500/30">
+              <a
+                href="https://instagram.com/flexerxcodez"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full glass hover:bg-purple-500/30 transition-all"
+              >
+                <Instagram className="w-5 h-5 text-purple-400" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
