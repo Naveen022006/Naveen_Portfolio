@@ -55,9 +55,9 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-6 relative z-10 flex flex-col justify-center">
         {/* Text Content */}
-        <div className={`space-y-8 ${mounted ? "opacity-100" : "opacity-0"}`}>
+        <div className={`space-y-8 flex flex-col items-start max-w-2xl text-left ${mounted ? "opacity-100" : "opacity-0"}`}>
           {/* Badge */}
           <ScrollReveal direction="up" delay={100}>
             <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full animate-pulse-glow">
@@ -98,45 +98,6 @@ export function HeroSection() {
             </MagneticButton>
           </ScrollReveal>
         </div>
-
-        <ScrollReveal direction="right" delay={300} className="relative h-96 lg:h-[500px]">
-          <div className="absolute inset-0 flex items-center justify-center">
-            {/* Central orb */}
-            <div
-              className="relative w-64 h-64 md:w-80 md:h-80"
-              style={{
-                transform: `translate(${mousePos.x * -20}px, ${mousePos.y * -20}px)`,
-                transition: "transform 0.4s ease-out",
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-cyan-500/30 rounded-full blur-2xl animate-pulse-glow" />
-              <div className="absolute inset-4 glass rounded-full animate-rotate-slow" />
-
-              {/* Floating tech icons with enhanced hover effects */}
-              {[
-                { emoji: "⚛️", pos: "absolute -top-8 left-1/2 -translate-x-1/2", delay: 0 },
-                { emoji: "🔷", pos: "absolute top-1/4 -right-8", delay: 100 },
-                { emoji: "🌐", pos: "absolute bottom-1/4 -right-4", delay: 200 },
-                { emoji: "🚀", pos: "absolute -bottom-8 left-1/2 -translate-x-1/2", delay: 300 },
-                { emoji: "💻", pos: "absolute top-1/4 -left-8", delay: 400 },
-                { emoji: "🎨", pos: "absolute bottom-1/4 -left-4", delay: 500 },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className={`${item.pos} animate-float`}
-                  style={{
-                    animationDelay: `${item.delay}ms`,
-                    transform: `translate(${mousePos.x * (10 + index * 5)}px, ${mousePos.y * (10 + index * 5)}px)`,
-                  }}
-                >
-                  <div className="glass p-4 rounded-xl hover:scale-125 hover:bg-purple-500/30 transition-all duration-300 cursor-pointer">
-                    <span className="text-3xl">{item.emoji}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </ScrollReveal>
       </div>
 
       {/* Scroll indicator with bounce */}
