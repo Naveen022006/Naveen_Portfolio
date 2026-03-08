@@ -84,19 +84,6 @@ export function HeroSection() {
             </p>
           </ScrollReveal>
 
-          {/* CTA Button */}
-          <ScrollReveal direction="up" delay={600}>
-            <MagneticButton>
-              <button className="group relative px-8 py-4 rounded-xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 animate-gradient-shift" />
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
-                <span className="relative flex items-center gap-2 text-white font-semibold">
-                  Learn More
-                  <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
-                </span>
-              </button>
-            </MagneticButton>
-          </ScrollReveal>
         </div>
 
         {/* Profile Card */}
