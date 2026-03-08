@@ -13,7 +13,7 @@ const projects = [
     image: "/placeholder.svg",
     tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     gradient: "from-orange-500 to-pink-600",
-    link: "https://github.com/Naveen022006/avva-s-website",
+    link: "https://naveen022006.github.io/avva-s-website/",
     githubLink: "https://github.com/Naveen022006/avva-s-website",
     icon: Globe,
     features: ["Admin Dashboard", "Shopping Cart", "Live on GitHub Pages"],
