@@ -222,7 +222,7 @@ function SolarFlare({ index, sunRadius }: { index: number; sunRadius: number }) 
       const time = state.clock.elapsedTime
       const scale = 1 + Math.sin(time * 2 + index) * 0.3
       flareRef.current.scale.y = scale * baseHeight
-      flareRef.current.material.opacity = 0.3 + Math.sin(time * 3 + index * 0.5) * 0.2
+        ; (flareRef.current.material as THREE.Material).opacity = 0.3 + Math.sin(time * 3 + index * 0.5) * 0.2
     }
   })
 
@@ -755,7 +755,7 @@ function Nebula() {
     const time = state.clock.elapsedTime
     if (nebulaRef1.current) {
       nebulaRef1.current.rotation.z = time * 0.005
-      nebulaRef1.current.material.opacity = 0.02 + Math.sin(time * 0.2) * 0.01
+        ; (nebulaRef1.current.material as THREE.Material).opacity = 0.02 + Math.sin(time * 0.2) * 0.01
     }
     if (nebulaRef2.current) {
       nebulaRef2.current.rotation.z = -time * 0.003

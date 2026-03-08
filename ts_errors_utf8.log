@@ -1,0 +1,4 @@
+﻿components/space-scene.tsx(225,33): error TS2339: Property 'opacity' does not exist on type 'Material | Material[]'.
+  Property 'opacity' does not exist on type 'Material[]'.
+components/space-scene.tsx(758,35): error TS2339: Property 'opacity' does not exist on type 'Material | Material[]'.
+  Property 'opacity' does not exist on type 'Material[]'.

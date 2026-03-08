@@ -89,7 +89,7 @@ export function EncryptionSection() {
                 <div
                   className="absolute w-80 h-80 border border-cyan-500/20 rounded-full animate-rotate-slow"
                   style={{
-                    transform: `translate(${mousePos.x * -15}px, ${mousePos.y * -15}px) rotate(${Date.now() / 100}deg)`,
+                    transform: `translate(${mousePos.x * -15}px, ${mousePos.y * -15}px)`,
                   }}
                 />
                 <div

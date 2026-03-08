@@ -21,7 +21,6 @@ const backendSkills = [
   { name: "MongoDB", icon: "🍃" },
   { name: "PostgreSQL", icon: "🐘" },
   { name: "Firebase", icon: "🔥" },
-  { name: "GraphQL", icon: "◈" },
   { name: "Prisma", icon: "💎" },
   { name: "Docker", icon: "🐳" },
   { name: "AWS", icon: "☁️" },
