@@ -55,9 +55,9 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 flex flex-col justify-center">
+      <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
-        <div className={`space-y-8 flex flex-col items-start max-w-2xl text-left ${mounted ? "opacity-100" : "opacity-0"}`}>
+        <div className={`space-y-8 flex flex-col items-start text-left ${mounted ? "opacity-100" : "opacity-0"}`}>
           {/* Badge */}
           <ScrollReveal direction="up" delay={100}>
             <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full animate-pulse-glow">
@@ -98,6 +98,44 @@ export function HeroSection() {
             </MagneticButton>
           </ScrollReveal>
         </div>
+
+        {/* Profile Card */}
+        <ScrollReveal direction="right" delay={300}>
+          <div className="glass-strong rounded-3xl p-10 max-w-lg mx-auto w-full transition-transform hover:scale-[1.02] duration-500">
+            <div className="flex flex-col items-center">
+              <img
+                src="/placeholder-user.jpg"
+                alt="Naveen"
+                className="w-32 h-32 rounded-full object-cover border-4 border-purple-500/30 shadow-[0_0_30px_rgba(168,85,247,0.4)]"
+              />
+
+              <h2 className="text-3xl font-bold mt-6 text-white group-hover:text-gradient">Naveen</h2>
+
+              <p className="text-gray-400 mt-2 text-center text-sm md:text-base">
+                B.Tech Artificial Intelligence & Data Science - AI & Full Stack Developer - India
+              </p>
+            </div>
+
+            <hr className="my-8 border-purple-500/20" />
+
+            <div className="flex justify-between text-center gap-4">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">3</h3>
+                <p className="text-xs md:text-sm text-gray-400 tracking-wider mt-1">PROJECTS</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">0</h3>
+                <p className="text-xs md:text-sm text-gray-400 tracking-wider mt-1">HACKATHONS</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">4</h3>
+                <p className="text-xs md:text-sm text-gray-400 tracking-wider mt-1">TECHNOLOGIES</p>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
 
       {/* Scroll indicator with bounce */}
