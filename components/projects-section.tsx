@@ -48,13 +48,13 @@ export function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
 
   return (
-    <section id="projects" className="relative py-32 overflow-hidden">
+    <section id="projects" className="relative py-20 overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <ScrollReveal direction="up">
           <div className="text-center mb-20">
@@ -72,7 +72,7 @@ export function ProjectsSection() {
           </div>
         </ScrollReveal>
 
-        <div className="grid gap-12">
+        <div className="grid gap-12 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <ScrollReveal key={project.title} direction={index % 2 === 0 ? "left" : "right"} delay={index * 150}>
               <div
@@ -132,7 +132,7 @@ export function ProjectsSection() {
                     </div>
 
                     {/* Content with enhanced styling */}
-                    <div className="p-8 md:p-12 flex flex-col justify-center relative">
+                    <div className="p-6 md:p-8 flex flex-col justify-center relative">
                       {/* Decorative elements */}
                       <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-purple-500/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
