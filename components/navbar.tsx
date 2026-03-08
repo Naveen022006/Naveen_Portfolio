@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Instagram, Send, Menu, X } from "lucide-react"
+import { Instagram, Linkedin, Send, Menu, X } from "lucide-react"
 import { MagneticButton } from "./magnetic-button"
 
 const navLinks = [
@@ -77,6 +77,11 @@ export function Navbar() {
               <Instagram className="w-5 h-5 text-gray-400 group-hover:text-purple-400 transition-colors" />
             </div>
           </MagneticButton>
+          <MagneticButton href="https://linkedin.com/">
+            <div className="p-2 rounded-full glass hover:bg-blue-500/30 transition-all duration-300 group">
+              <Linkedin className="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
+            </div>
+          </MagneticButton>
         </div>
 
         {/* Mobile Menu Button */}
@@ -115,6 +120,14 @@ export function Navbar() {
                 className="p-2 rounded-full glass hover:bg-purple-500/30 transition-all"
               >
                 <Instagram className="w-5 h-5 text-purple-400" />
+              </a>
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full glass hover:bg-blue-500/30 transition-all"
+              >
+                <Linkedin className="w-5 h-5 text-blue-400" />
               </a>
             </div>
           </div>
