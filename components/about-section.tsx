@@ -7,20 +7,20 @@ import { ParallaxSection } from "./parallax-section"
 const features = [
   {
     icon: Zap,
-    title: "Lightning Fast",
-    description: "Optimized performance with cutting-edge technologies",
+    title: "AI Development",
+    description: "Building intelligent applications using machine learning, Python, and data-driven technologies.",
     gradient: "from-yellow-500 to-orange-500",
   },
   {
     icon: Shield,
-    title: "Secure & Reliable",
-    description: "Enterprise-grade security for all applications",
+    title: "Web development",
+    description: "Creating responsive, fast, and user-focused websites using modern frontend and backend technologies.",
     gradient: "from-green-500 to-emerald-500",
   },
   {
     icon: Rocket,
-    title: "Modern Stack",
-    description: "Built with Next.js, React, and TypeScript",
+    title: "Modern Technologies",
+    description: "Creating scalable web applications and automation tools with modern development practices.",
     gradient: "from-purple-500 to-pink-500",
   },
 ]
@@ -40,11 +40,11 @@ export function AboutSection() {
               <span className="text-sm text-cyan-300">About NAVEEN</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-white">Think better with </span>
-              <span className="text-gradient">Next.js</span>
+              <span className="text-white">Build Intelligent Solutions with </span>
+              <span className="text-gradient">AI & Code</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              Making apps with modern technologies. Never miss a task, deadline or idea.
+              AI & Data Science student passionate about building smart applications, automation tools, and modern web experiences..
             </p>
           </div>
         </ScrollReveal>
