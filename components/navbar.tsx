@@ -9,6 +9,7 @@ const navLinks = [
   { href: "#about", label: "About me" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ]
 
 export function Navbar() {
@@ -20,7 +21,7 @@ export function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
 
-      const sections = ["about", "skills", "projects"]
+      const sections = ["about", "skills", "projects", "contact"]
       for (const section of sections) {
         const el = document.getElementById(section)
         if (el) {
