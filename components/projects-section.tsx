@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Avva's Home Foods",
     description:
-      "A full-featured food ordering website built with HTML, CSS, and JavaScript. Features product listings, a shopping cart, an admin dashboard with category management, and GitHub Pages deployment for live access.",
+      "A full-featured food ordering website built with HTML, CSS, and JavaScript.",
     image: "/placeholder.svg",
     tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     gradient: "from-orange-500 to-pink-600",
@@ -19,23 +19,23 @@ const projects = [
     features: ["Admin Dashboard", "Shopping Cart", "Live on GitHub Pages"],
   },
   {
-    title: "ATM Simulation (Java)",
+    title: "Laptop Control Application",
     description:
-      "A terminal-based ATM simulation project built in Java using Object-Oriented Programming concepts. Supports account management, balance inquiry, deposits, and withdrawals in a realistic CLI interface.",
+      "A full-stack application for remote laptop management and monitoring.",
     image: "/placeholder.svg",
-    tags: ["Java", "OOP", "CLI", "Simulation"],
+    tags: ["Web", "Remote Control", "System Management"],
     gradient: "from-cyan-600 to-blue-600",
-    link: "https://github.com/Naveen022006/ATM-Simulation-Java",
-    githubLink: "https://github.com/Naveen022006/ATM-Simulation-Java",
+    link: "https://laptop.naveenhub.dev",
+    githubLink: "https://github.com/Naveen022006/laptop-control-application",
     icon: Terminal,
-    features: ["OOP Design", "Account Management", "Terminal Interface"],
+    features: ["Remote Management", "System Status", "Secure Access"],
   },
   {
     title: "Smart Waste Collection Scheduling",
     description:
-      "An intelligent waste collection scheduling system that uses algorithmic logic to optimize pickup routes and timings. Includes a dataset generation tool to simulate real-world scenarios for testing.",
+      "An intelligent waste collection scheduling system that uses algorithmic logic to optimize pickup routes and timings.",
     image: "/placeholder.svg",
-    tags: ["Python", "Algorithms", "Scheduling", "Data"],
+    tags: ["Python", "Algorithms", "Scheduling"],
     gradient: "from-emerald-600 to-teal-600",
     link: "https://github.com/Naveen022006/Smart_waste_collection_scheduling",
     githubLink: "https://github.com/Naveen022006/Smart_waste_collection_scheduling",
