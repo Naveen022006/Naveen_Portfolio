@@ -10,7 +10,7 @@ const projects = [
     title: "Avva's Home Foods",
     description:
       "A full-featured food ordering website built with HTML, CSS, and JavaScript.",
-    image: "/placeholder.svg",
+    image: "/avva.png",
     tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     gradient: "from-orange-500 to-pink-600",
     link: "https://naveen022006.github.io/avva-s-website/",
@@ -22,7 +22,7 @@ const projects = [
     title: "Laptop Control Application",
     description:
       "A full-stack application for remote laptop management and monitoring.",
-    image: "/placeholder.svg",
+    image: "/header-logo.png",
     tags: ["Web", "Remote Control", "System Management"],
     gradient: "from-cyan-600 to-blue-600",
     link: "https://laptop.naveenhub.dev",
