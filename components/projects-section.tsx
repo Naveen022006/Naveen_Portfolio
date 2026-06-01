@@ -11,12 +11,12 @@ const projects = [
     description:
       "A full-featured food ordering website built with HTML, CSS, and JavaScript.",
     image: "/avva.png",
-    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    tags: ["HTML", "CSS", "Spring Boot"],
     gradient: "from-orange-500 to-pink-600",
-    link: "https://naveen022006.github.io/avva-s-website/",
+    link: "https://avvashomefood.naveenhub.dev/",
     githubLink: "https://github.com/Naveen022006/avva-s-website",
     icon: Globe,
-    features: ["Admin Dashboard", "Shopping Cart", "Live on GitHub Pages"],
+    features: ["Admin Dashboard", "Shopping Cart"],
   },
   {
     title: "Laptop Control Application",
