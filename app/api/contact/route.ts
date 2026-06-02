@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: Request) {
   try {
     const body = await request.json()
@@ -33,6 +31,8 @@ export async function POST(request: Request) {
         { status: 500 }
       )
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     const contactEmailTo = process.env.CONTACT_EMAIL_TO || 'kanagunaveen21@gmail.com'
     const contactEmailFrom = process.env.CONTACT_EMAIL_FROM || 'noreply@naveen-portfolio.com'
