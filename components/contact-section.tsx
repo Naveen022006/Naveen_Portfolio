@@ -172,7 +172,7 @@ export function ContactSection() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="John Doe"
+                    placeholder="Naveen"
                     className="w-full px-4 py-3 glass rounded-xl border border-purple-500/20 focus:border-purple-500/50 focus:outline-none transition-all duration-300 text-white placeholder-gray-500 bg-gray-900/50 hover:bg-gray-900/70 focus:bg-gray-900/80"
                   />
                 </div>
@@ -189,7 +189,7 @@ export function ContactSection() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="hello@example.com"
+                    placeholder="naveen@dev.com"
                     className="w-full px-4 py-3 glass rounded-xl border border-purple-500/20 focus:border-purple-500/50 focus:outline-none transition-all duration-300 text-white placeholder-gray-500 bg-gray-900/50 hover:bg-gray-900/70 focus:bg-gray-900/80"
                   />
                 </div>
