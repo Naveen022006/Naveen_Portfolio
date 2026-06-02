@@ -31,16 +31,16 @@ const projects = [
     features: ["Remote Management", "System Status", "Secure Access"],
   },
   {
-    title: "Smart Waste Collection Scheduling",
+    title: "Dev Match",
     description:
-      "An intelligent waste collection scheduling system that uses algorithmic logic to optimize pickup routes and timings.",
-    image: "/placeholder.svg",
-    tags: ["Python", "Algorithms", "Scheduling"],
+      "A developer matchmaking platform that connects developers with projects and teams based on skills and interests.",
+    image: "/evmatch-logo.png",
+    tags: ["Python", "Algorithms", "Machine Learning"],
     gradient: "from-emerald-600 to-teal-600",
-    link: "https://github.com/Naveen022006/Smart_waste_collection_scheduling",
-    githubLink: "https://github.com/Naveen022006/Smart_waste_collection_scheduling",
+    link: "https://github.com/Naveen022006/Dev-Match",
+    githubLink: "https://github.com/Naveen022006/DevMatch-From-Github",
     icon: Trash2,
-    features: ["Route Optimization", "Dataset Generator", "Smart Scheduling"],
+    features: ["connections", "only for Developers", "smart matching algorithm"],
   },
 ]
 
