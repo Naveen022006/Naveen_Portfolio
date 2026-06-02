@@ -10,8 +10,6 @@ const frontendSkills = [
   { name: "TypeScript", icon: "🔷" },
   { name: "React", icon: "⚛️" },
   { name: "Next.js", icon: "▲" },
-  { name: "Tailwind", icon: "💨" },
-  { name: "Framer Motion", icon: "✨" },
 ]
 
 const backendSkills = [
@@ -19,10 +17,10 @@ const backendSkills = [
   { name: "Express", icon: "🚂" },
   { name: "MongoDB", icon: "🍃" },
   { name: "PostgreSQL", icon: "🐘" },
-  { name: "Prisma", icon: "💎" },
   { name: "Docker", icon: "🐳" },
   { name: "AWS", icon: "☁️" },
-  { name: "spring boot", icon: "♨️" }
+  { name: "spring boot", icon: "♨️" },
+  { name: "Supabase", icon: "🚀" }
 ]
 
 function SkillCarousel({
