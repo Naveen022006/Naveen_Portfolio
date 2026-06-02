@@ -34,12 +34,12 @@ const projects = [
     title: "Dev Match",
     description:
       "A developer matchmaking platform that connects developers with projects and teams based on skills and interests.",
-    image: "/evmatch-logo.png",
+    image: "/devmatch-logo.png",
     tags: ["Python", "Algorithms", "Machine Learning"],
     gradient: "from-emerald-600 to-teal-600",
     link: "https://github.com/Naveen022006/Dev-Match",
     githubLink: "https://github.com/Naveen022006/DevMatch-From-Github",
-    icon: Trash2,
+    icon: Globe,
     features: ["connections", "only for Developers", "smart matching algorithm"],
   },
 ]
