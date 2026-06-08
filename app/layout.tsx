@@ -7,7 +7,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NAVEEN | Fullstack Developer Portfolio",
+  title: "NAVEEN - Portfolio",
   description: "High-end portfolio showcasing cutting-edge web development skills by NAVEEN",
 }
 

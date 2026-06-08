@@ -79,8 +79,8 @@ export function HeroSection() {
           {/* Description */}
           <ScrollReveal direction="up" delay={400}>
             <p className="text-lg text-gray-400 max-w-xl leading-relaxed">
-              I&apos;m a python  developer Engineer with experience in Website and Software development.
-              Check out my projects and skills.
+              I&apos;m a Python & AI Developer focused on building intelligent systems, automation solutions, and scalable web applications. 
+              Explore my projects and technical skills.
             </p>
           </ScrollReveal>
 
