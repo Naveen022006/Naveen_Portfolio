@@ -62,7 +62,7 @@ export function HeroSection() {
           <ScrollReveal direction="up" delay={100}>
             <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full animate-pulse-glow">
               <Sparkles className="w-4 h-4 text-purple-400" />
-              <span className="text-sm text-purple-300">Fullstack Developer Portfolio</span>
+              <span className="text-sm text-purple-300">Python Developer</span>
             </div>
           </ScrollReveal>
 
@@ -79,7 +79,7 @@ export function HeroSection() {
           {/* Description */}
           <ScrollReveal direction="up" delay={400}>
             <p className="text-lg text-gray-400 max-w-xl leading-relaxed">
-              I&apos;m a Full Stack Software Engineer with experience in Website, Mobile, and Software development.
+              I&apos;m a python  developer Engineer with experience in Website and Software development.
               Check out my projects and skills.
             </p>
           </ScrollReveal>
@@ -99,7 +99,7 @@ export function HeroSection() {
               <h2 className="text-3xl font-bold mt-6 text-white group-hover:text-gradient">Naveen</h2>
 
               <p className="text-gray-400 mt-2 text-center text-sm md:text-base">
-                B.Tech Artificial Intelligence & Data Science - AI & Full Stack Developer - India
+                B.Tech Artificial Intelligence & Data Science - AI & Python Developer - India
               </p>
             </div>
 
@@ -117,7 +117,7 @@ export function HeroSection() {
               </div>
 
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">4</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">2</h3>
                 <p className="text-xs md:text-sm text-gray-400 tracking-wider mt-1">Languages</p>
               </div>
             </div>
